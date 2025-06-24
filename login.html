@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Page</title>
+  <style>
+    body {
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('img/kraft6.jpg');
+  background-repeat: no-repeat;
+  background-position: top center; 
+  background-size:  cover;
+    }
+
+    .login-container {
+      backdrop-filter: blur(10px);
+      
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+      color: white;
+    }
+
+    .login-container h2 {
+      margin-bottom: 10px;
+      color:black;
+    }
+
+    .login-container p {
+      margin-bottom: 30px;
+      color: #555;
+    }
+    .login-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .facebook {
+      background-color: #3b5998;
+    }
+
+    .twitter {
+      background-color: #1da1f2;
+    }
+
+    .guest {
+      background-color: #333;
+    }
+
+    .login-btn:hover {
+      opacity: 0.9;
+    }
+    footer-text {
+      font-size: 12px;
+      margin-top: 20px;
+      color: white;
+    }
+
+    .footer-text a {
+      color: blue;
+      text-decoration: underline;
+      margin: 0 5px;
+    }
+
+    .footer-text a:hover {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Welcome</h2>
+    <p>Please log in to continue</p>
+
+    <a href="https://www.facebook.com/" target="_blank" class="login-btn facebook">Login with Facebook</a>
+    <a href="https://www.twitter.com/" target="_blank" class="login-btn twitter">Login with Twitter</a>
+    <a href="#" class="login-btn guest">Continue as Guest</a>
+     <div class="footer-text">
+      By continuing, you agree to our
+      <a href="terms.html" target="_blank">Terms of Service</a> and
+      <a href="privacy.html" target="_blank">Privacy Policy</a>.
+    </div>
+  </div>
+</body>
+</html>
